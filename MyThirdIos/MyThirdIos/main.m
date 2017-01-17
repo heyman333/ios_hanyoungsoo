@@ -14,9 +14,6 @@
 
 int main(int argc, const char * argv[]) {
 
-    
-    
-
     Warrior *babarian =  [[Warrior alloc] init];
     Person *soo =  [Person new];
     Wizard *sosu =  [Wizard new];
@@ -49,6 +46,7 @@ int main(int argc, const char * argv[]) {
     NSLog(@"바바리안의 마력을 200으로 채웁니다");
     [babarian setMana:200];
     [babarian magicalAttack];
+    [sosu setHealth:200];
      NSLog(@"babarian health: %d , babarian mana : %d", babarian.health, babarian.mana);
     
     return 0;
