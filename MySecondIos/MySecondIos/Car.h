@@ -10,7 +10,6 @@
 
 @interface Car : NSObject
 
-
 @property id speed;
 @property id color;
 @property id model;
