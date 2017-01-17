@@ -21,7 +21,7 @@
 - (id)eat;
 - (id)sleep;
 - (id)think;
-- (id)poo;
+- (id)shit;
 - (id)love;
 - (id)pray;
 - (id)hate;

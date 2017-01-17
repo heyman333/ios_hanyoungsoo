@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		6F843DAA1E2DB2FB000D67F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F843DA91E2DB2FB000D67F7 /* main.m */; };
 		6F843DB21E2DB57C000D67F7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F843DB11E2DB57C000D67F7 /* Person.m */; };
+		6F843DB51E2DBF11000D67F7 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F843DB41E2DBF11000D67F7 /* Dog.m */; };
+		6F843DB81E2DC086000D67F7 /* Horse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F843DB71E2DC086000D67F7 /* Horse.m */; };
+		6F843DBB1E2DC13D000D67F7 /* MobilePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F843DBA1E2DC13D000D67F7 /* MobilePhone.m */; };
+		6F843DBE1E2DC256000D67F7 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F843DBD1E2DC256000D67F7 /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +32,14 @@
 		6F843DA91E2DB2FB000D67F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F843DB01E2DB57C000D67F7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		6F843DB11E2DB57C000D67F7 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		6F843DB31E2DBF11000D67F7 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		6F843DB41E2DBF11000D67F7 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		6F843DB61E2DC086000D67F7 /* Horse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Horse.h; sourceTree = "<group>"; };
+		6F843DB71E2DC086000D67F7 /* Horse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Horse.m; sourceTree = "<group>"; };
+		6F843DB91E2DC13D000D67F7 /* MobilePhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobilePhone.h; sourceTree = "<group>"; };
+		6F843DBA1E2DC13D000D67F7 /* MobilePhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MobilePhone.m; sourceTree = "<group>"; };
+		6F843DBC1E2DC256000D67F7 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		6F843DBD1E2DC256000D67F7 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +75,14 @@
 				6F843DA91E2DB2FB000D67F7 /* main.m */,
 				6F843DB01E2DB57C000D67F7 /* Person.h */,
 				6F843DB11E2DB57C000D67F7 /* Person.m */,
+				6F843DB31E2DBF11000D67F7 /* Dog.h */,
+				6F843DB41E2DBF11000D67F7 /* Dog.m */,
+				6F843DB61E2DC086000D67F7 /* Horse.h */,
+				6F843DB71E2DC086000D67F7 /* Horse.m */,
+				6F843DB91E2DC13D000D67F7 /* MobilePhone.h */,
+				6F843DBA1E2DC13D000D67F7 /* MobilePhone.m */,
+				6F843DBC1E2DC256000D67F7 /* Car.h */,
+				6F843DBD1E2DC256000D67F7 /* Car.m */,
 			);
 			path = MySecondIos;
 			sourceTree = "<group>";
@@ -124,8 +144,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F843DBE1E2DC256000D67F7 /* Car.m in Sources */,
+				6F843DB51E2DBF11000D67F7 /* Dog.m in Sources */,
+				6F843DBB1E2DC13D000D67F7 /* MobilePhone.m in Sources */,
 				6F843DB21E2DB57C000D67F7 /* Person.m in Sources */,
 				6F843DAA1E2DB2FB000D67F7 /* main.m in Sources */,
+				6F843DB81E2DC086000D67F7 /* Horse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
