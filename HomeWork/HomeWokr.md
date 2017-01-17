@@ -1,4 +1,0 @@
-ios fastcampus project 
-----
-* 
-
