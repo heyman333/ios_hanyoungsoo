@@ -11,6 +11,7 @@
 		6FEE47F91E2DE5FA0079DA27 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEE47F81E2DE5FA0079DA27 /* Person.m */; };
 		6FEE47FC1E2DE6250079DA27 /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEE47FB1E2DE6250079DA27 /* Warrior.m */; };
 		6FEE47FF1E2DE6780079DA27 /* Wizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEE47FE1E2DE6780079DA27 /* Wizard.m */; };
+		94C1B2504A1771CABD841E34 /* libPods-MyThirdIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 415E8D843D61C897A217E0FC /* libPods-MyThirdIos.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3FE226840ED3CC3D1DFFBF27 /* Pods-MyThirdIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyThirdIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyThirdIos/Pods-MyThirdIos.debug.xcconfig"; sourceTree = "<group>"; };
+		415E8D843D61C897A217E0FC /* libPods-MyThirdIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyThirdIos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FEE47ED1E2DE5DA0079DA27 /* MyThirdIos */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyThirdIos; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FEE47F01E2DE5DA0079DA27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FEE47F71E2DE5FA0079DA27 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -34,6 +37,7 @@
 		6FEE47FB1E2DE6250079DA27 /* Warrior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
 		6FEE47FD1E2DE6780079DA27 /* Wizard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wizard.h; sourceTree = "<group>"; };
 		6FEE47FE1E2DE6780079DA27 /* Wizard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wizard.m; sourceTree = "<group>"; };
+		E04B896968A98797C0104E09 /* Pods-MyThirdIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyThirdIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyThirdIos/Pods-MyThirdIos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C1B2504A1771CABD841E34 /* libPods-MyThirdIos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE5EDF532B16BA3D831ACD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				415E8D843D61C897A217E0FC /* libPods-MyThirdIos.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F1BAE2E9185303C01F2126A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FE226840ED3CC3D1DFFBF27 /* Pods-MyThirdIos.debug.xcconfig */,
+				E04B896968A98797C0104E09 /* Pods-MyThirdIos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6FEE47E41E2DE5DA0079DA27 = {
 			isa = PBXGroup;
 			children = (
 				6FEE47EF1E2DE5DA0079DA27 /* MyThirdIos */,
 				6FEE47EE1E2DE5DA0079DA27 /* Products */,
+				2F1BAE2E9185303C01F2126A /* Pods */,
+				0CE5EDF532B16BA3D831ACD6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6FEE47F41E2DE5DA0079DA27 /* Build configuration list for PBXNativeTarget "MyThirdIos" */;
 			buildPhases = (
+				2995771292DC1B42FD480F4A /* [CP] Check Pods Manifest.lock */,
 				6FEE47E91E2DE5DA0079DA27 /* Sources */,
 				6FEE47EA1E2DE5DA0079DA27 /* Frameworks */,
 				6FEE47EB1E2DE5DA0079DA27 /* CopyFiles */,
+				FE593071B56C40A4828CAAC8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +154,39 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2995771292DC1B42FD480F4A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE593071B56C40A4828CAAC8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyThirdIos/Pods-MyThirdIos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6FEE47E91E2DE5DA0079DA27 /* Sources */ = {
@@ -233,6 +292,7 @@
 		};
 		6FEE47F51E2DE5DA0079DA27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE226840ED3CC3D1DFFBF27 /* Pods-MyThirdIos.debug.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -240,6 +300,7 @@
 		};
 		6FEE47F61E2DE5DA0079DA27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04B896968A98797C0104E09 /* Pods-MyThirdIos.release.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

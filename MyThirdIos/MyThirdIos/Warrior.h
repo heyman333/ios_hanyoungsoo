@@ -10,13 +10,14 @@
 
 @interface Warrior : NSObject
 
-@property id health;
-@property id mana;
+@property int health;
+@property int mana;
 @property id physicalPower;
 @property id magicPower;
 @property id weapon;
 
 
--(void)eat;
+-(id)magicalAttack;
+-(id)heathPlus;
 
 @end

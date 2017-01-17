@@ -10,4 +10,9 @@
 
 @implementation Wizard
 
+
+- (void)magicalAttack{
+    NSLog(@"마법사의 마법공격");
+}
+
 @end

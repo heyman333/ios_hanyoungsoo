@@ -12,5 +12,7 @@
 
 @property id name;
 
+- (id)talk;
+- (id)sayMyName;
 
 @end

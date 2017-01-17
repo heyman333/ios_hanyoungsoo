@@ -10,13 +10,14 @@
 
 @interface Wizard : NSObject
 
-@property id health;
-@property id mana;
+@property int health;
+@property int mana;
 @property id physicalPower;
 @property id magicPower;
 @property id weapon;
 
 
-- (void)eat;
+- (void)magicalAttack;
+
 
 @end
