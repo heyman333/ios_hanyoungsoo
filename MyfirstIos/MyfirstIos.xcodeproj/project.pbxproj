@@ -13,9 +13,12 @@
 		6F407A5A1E2C78C9003A6023 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F407A581E2C78C9003A6023 /* Main.storyboard */; };
 		6F407A5C1E2C78C9003A6023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F407A5B1E2C78C9003A6023 /* Assets.xcassets */; };
 		6F407A5F1E2C78C9003A6023 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F407A5D1E2C78C9003A6023 /* LaunchScreen.storyboard */; };
+		D908099912902B12FDD03DEF /* libPods-MyfirstIos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A55121FC447F557E8CCEB4 /* libPods-MyfirstIos.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10345EBEEB94790D72882255 /* Pods-MyfirstIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyfirstIos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyfirstIos/Pods-MyfirstIos.debug.xcconfig"; sourceTree = "<group>"; };
+		63A55121FC447F557E8CCEB4 /* libPods-MyfirstIos.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyfirstIos.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F407A4C1E2C78C9003A6023 /* MyfirstIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyfirstIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F407A501E2C78C9003A6023 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F407A521E2C78C9003A6023 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		6F407A5B1E2C78C9003A6023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F407A5E1E2C78C9003A6023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F407A601E2C78C9003A6023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E6C2371B112A3D91051A9C /* Pods-MyfirstIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyfirstIos.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyfirstIos/Pods-MyfirstIos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D908099912902B12FDD03DEF /* libPods-MyfirstIos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				6F407A4E1E2C78C9003A6023 /* MyfirstIos */,
 				6F407A4D1E2C78C9003A6023 /* Products */,
+				AD6328B4EFF4538F9419FC61 /* Pods */,
+				D3E01AC17A9A380FEA189B77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD6328B4EFF4538F9419FC61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10345EBEEB94790D72882255 /* Pods-MyfirstIos.debug.xcconfig */,
+				B7E6C2371B112A3D91051A9C /* Pods-MyfirstIos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3E01AC17A9A380FEA189B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63A55121FC447F557E8CCEB4 /* libPods-MyfirstIos.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6F407A631E2C78C9003A6023 /* Build configuration list for PBXNativeTarget "MyfirstIos" */;
 			buildPhases = (
+				229F1C7742304FB2C642E02E /* [CP] Check Pods Manifest.lock */,
 				6F407A481E2C78C9003A6023 /* Sources */,
 				6F407A491E2C78C9003A6023 /* Frameworks */,
 				6F407A4A1E2C78C9003A6023 /* Resources */,
+				72DA93BC568040009977B1BF /* [CP] Embed Pods Frameworks */,
+				B881C80F44C2C682C7D52D49 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		229F1C7742304FB2C642E02E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72DA93BC568040009977B1BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyfirstIos/Pods-MyfirstIos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B881C80F44C2C682C7D52D49 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyfirstIos/Pods-MyfirstIos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6F407A481E2C78C9003A6023 /* Sources */ = {
@@ -268,6 +343,7 @@
 		};
 		6F407A641E2C78C9003A6023 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10345EBEEB94790D72882255 /* Pods-MyfirstIos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyfirstIos/Info.plist;
@@ -279,6 +355,7 @@
 		};
 		6F407A651E2C78C9003A6023 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7E6C2371B112A3D91051A9C /* Pods-MyfirstIos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyfirstIos/Info.plist;
