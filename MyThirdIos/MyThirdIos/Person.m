@@ -10,16 +10,8 @@
 
 @implementation Person
 
-/**
- @discussion 누군가에게 말을 겁니다.
- @author HanYoungsoo 
- @version 1.0
- @param  
- @return nil
- */
-
 -(id)talk{
-    NSLog(@"말을 합니다.");
+    NSLog(@"말하다");
     return nil;
 }
 

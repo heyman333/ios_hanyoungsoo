@@ -7,17 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Wizard.h"
 
 @interface Warrior : NSObject
 
-@property int health;
-@property int mana;
-@property id physicalPower;
-@property id magicPower;
-@property id weapon;
+@property NSString* name;
+@property NSInteger health;
+@property NSInteger mana;
+@property NSInteger physicalPower;
+@property NSInteger magicPower;
+@property NSString *  weapon;
 
 
 -(id)magicalAttack;
 -(id)heathPlus;
+-(id)megicalAttatk:(id)damage;
+-(id)skill:(id)damage healthUp:(id)health;
+-(id)physicalAttack:(id)to howDam:(NSInteger)dam;
 
 @end

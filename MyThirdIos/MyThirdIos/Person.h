@@ -10,9 +10,11 @@
 
 @interface Person : NSObject
 
-@property id name;
+@property NSString * name;
+
 
 - (id)talk;
 - (id)sayMyName;
 
 @end
+

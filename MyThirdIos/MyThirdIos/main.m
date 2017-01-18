@@ -13,41 +13,66 @@
 
 
 int main(int argc, const char * argv[]) {
-
+    
     Warrior *babarian =  [[Warrior alloc] init];
-    Person *soo =  [Person new];
+    //    Person *soo =  [Person new];
     Wizard *sosu =  [Wizard new];
-
+    [sosu setName:@"소서리스"];
+    [babarian setName:@"바바리안"];
     
-    babarian.health = 90;
-    babarian.mana = 20;
-    babarian.physicalPower = @100;
-
-    soo.name = @"Han Young soo";
     
-    sosu.health = 20;
-    sosu.mana = 80;
+    //    [babarian megicalAttatk:@"100"];
+    //    [babarian megicalAttatk:@"300"];
+    //    [babarian skill:@"30" healthUp:@"100"];
+    //    [babarian skill:@"50" healthUp:@"140"];
     
-    NSLog(@"My name is %@", soo.name);
-    NSLog(@"babarian health: %d , babarian mana : %d", babarian.health, babarian.mana);
-    NSLog(@"sosu health: %d , sosu mana : %d", sosu.health, sosu.mana);
     
-    NSLog(@"바바리안의 공격력은 %@ 입니다.", babarian.physicalPower);
-    
-    [soo talk];
-    [soo sayMyName];
-    [babarian magicalAttack];
-    [babarian heathPlus];
-    NSLog(@"babarian health: %d , babarian mana : %d", babarian.health, babarian.mana);
-    [sosu health];
     [sosu setHealth:300];
-  
-    NSLog(@"babarian health: %d , babarian mana : %d", sosu.health, sosu.mana);
-    NSLog(@"바바리안의 마력을 200으로 채웁니다");
-    [babarian setMana:200];
-    [babarian magicalAttack];
-    [sosu setHealth:200];
-     NSLog(@"babarian health: %d , babarian mana : %d", babarian.health, babarian.mana);
+    [babarian setHealth:400];
+    NSInteger babarianDam = 30;
+    NSInteger sosuDam = 30;
+    NSInteger num = 1;
+    
+    NSLog(@"--------전투 시작!--------");
+    NSLog(@"바바리안의 풀체력은 %lu 입니다.", [babarian health]);
+    NSLog(@"소서리스의 풀체력은 %lu 입니다.", [sosu health]);
+
+    
+    while (true) {
+        
+        babarianDam += 5;
+        sosuDam += 27;
+        NSLog(@"");
+        NSLog(@"--------%lu 번째 싸움 --------", num++ );
+        
+        
+        [babarian physicalAttack:sosu howDam:babarianDam++];
+        
+        if([sosu health]>0){
+            NSLog(@"소서리스의 체력은 %lu 입니다.", [sosu health]);
+        }
+        
+        
+        if([sosu health]<=0){
+            NSLog(@"소서리스가 사망했습니다.");
+            NSLog(@"전투가 종료 됐습니다.");
+            break;
+        }
+        
+        [sosu magicalAttack:babarian howDam:sosuDam++];
+        if([babarian health] >= 0){
+            NSLog(@"바바리안의 체력은 %lu 입니다.", [babarian health]);
+        }
+        
+        
+        if([babarian health]<=0){
+            NSLog(@"바바리안이 사망했습니다.");
+            NSLog(@"-----전투가 종료 됐습니다-----");
+            break;
+        }
+        
+    }
     
     return 0;
+    
 }
