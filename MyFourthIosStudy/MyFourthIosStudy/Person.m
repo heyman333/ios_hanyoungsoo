@@ -11,12 +11,11 @@
 @interface Person ()
 
 @property NSInteger age;
-
 @property NSInteger eattingCount;
+
 @end
 
 @implementation Person
-
 
 - (void)eat
 {

@@ -19,7 +19,6 @@ int main(int argc, const char * argv[]) {
     [p1 eat];
     [p1 eat];
     [p1 eat];
-    [p1 eat]
     NSLog(@"%ld",[p1 howManayEatting]);
     
     
