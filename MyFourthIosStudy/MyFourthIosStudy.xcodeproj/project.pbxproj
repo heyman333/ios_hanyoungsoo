@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F12A9971E30598700AC8191 /* GameCharactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F12A9961E30598700AC8191 /* GameCharactor.m */; };
+		6F12A99D1E3059A900AC8191 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F12A99C1E3059A900AC8191 /* Human.m */; };
+		6F12A9A31E305ECD00AC8191 /* Elf.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F12A9A21E305ECD00AC8191 /* Elf.m */; };
+		6F12A9A61E30618D00AC8191 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F12A9A51E30618D00AC8191 /* Person.m */; };
+		6F12A9A91E3061FD00AC8191 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F12A9A81E3061FD00AC8191 /* Student.m */; };
+		6F12A9AC1E30622400AC8191 /* UnivStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F12A9AB1E30622400AC8191 /* UnivStudent.m */; };
 		6F671FDB1E2F683E00AC926C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F671FDA1E2F683E00AC926C /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +29,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6F12A9951E30598700AC8191 /* GameCharactor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCharactor.h; sourceTree = "<group>"; };
+		6F12A9961E30598700AC8191 /* GameCharactor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCharactor.m; sourceTree = "<group>"; };
+		6F12A99B1E3059A900AC8191 /* Human.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		6F12A99C1E3059A900AC8191 /* Human.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		6F12A9A11E305ECD00AC8191 /* Elf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elf.h; sourceTree = "<group>"; };
+		6F12A9A21E305ECD00AC8191 /* Elf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elf.m; sourceTree = "<group>"; };
+		6F12A9A41E30618D00AC8191 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		6F12A9A51E30618D00AC8191 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		6F12A9A71E3061FD00AC8191 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		6F12A9A81E3061FD00AC8191 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		6F12A9AA1E30622400AC8191 /* UnivStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnivStudent.h; sourceTree = "<group>"; };
+		6F12A9AB1E30622400AC8191 /* UnivStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnivStudent.m; sourceTree = "<group>"; };
 		6F671FD71E2F683E00AC926C /* MyFourthIosStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyFourthIosStudy; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F671FDA1E2F683E00AC926C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +76,18 @@
 			isa = PBXGroup;
 			children = (
 				6F671FDA1E2F683E00AC926C /* main.m */,
+				6F12A9A71E3061FD00AC8191 /* Student.h */,
+				6F12A9A81E3061FD00AC8191 /* Student.m */,
+				6F12A9951E30598700AC8191 /* GameCharactor.h */,
+				6F12A9961E30598700AC8191 /* GameCharactor.m */,
+				6F12A99B1E3059A900AC8191 /* Human.h */,
+				6F12A99C1E3059A900AC8191 /* Human.m */,
+				6F12A9A11E305ECD00AC8191 /* Elf.h */,
+				6F12A9A21E305ECD00AC8191 /* Elf.m */,
+				6F12A9A41E30618D00AC8191 /* Person.h */,
+				6F12A9A51E30618D00AC8191 /* Person.m */,
+				6F12A9AA1E30622400AC8191 /* UnivStudent.h */,
+				6F12A9AB1E30622400AC8191 /* UnivStudent.m */,
 			);
 			path = MyFourthIosStudy;
 			sourceTree = "<group>";
@@ -120,6 +150,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F671FDB1E2F683E00AC926C /* main.m in Sources */,
+				6F12A9971E30598700AC8191 /* GameCharactor.m in Sources */,
+				6F12A9A61E30618D00AC8191 /* Person.m in Sources */,
+				6F12A9AC1E30622400AC8191 /* UnivStudent.m in Sources */,
+				6F12A99D1E3059A900AC8191 /* Human.m in Sources */,
+				6F12A9A31E305ECD00AC8191 /* Elf.m in Sources */,
+				6F12A9A91E3061FD00AC8191 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +282,7 @@
 				6F671FE01E2F683E00AC926C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

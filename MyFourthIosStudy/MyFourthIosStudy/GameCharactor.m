@@ -1,0 +1,18 @@
+//
+//  GameCharactor.m
+//  MyFourthIosStudy
+//
+//  Created by HanYoungsoo on 2017. 1. 19..
+//  Copyright © 2017년 YoungsooHan. All rights reserved.
+//
+
+#import "GameCharactor.h"
+
+@implementation GameCharactor
+
+
+-(void)sayHello{
+    NSLog(@"안녕!");
+}
+
+@end
