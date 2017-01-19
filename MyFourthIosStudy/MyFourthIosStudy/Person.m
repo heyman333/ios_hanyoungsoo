@@ -8,10 +8,19 @@
 
 #import "Person.h"
 
+@interface Person ()
+
+@property NSInteger age;
+
+@end
+
 @implementation Person
 
+//- (void)setAge:(NSInteger)age{
+//    
+//    _age = age;
+//    
+//}
 
-- (void)eat{
-    NSLog(@"먹다");
-}
+
 @end

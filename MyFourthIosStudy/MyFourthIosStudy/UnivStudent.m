@@ -19,7 +19,10 @@
 }
 
 -(void)goMT{
+    [super study];
+    [self study];
     NSLog(@"엠티가다!");
 }
+
 
 @end

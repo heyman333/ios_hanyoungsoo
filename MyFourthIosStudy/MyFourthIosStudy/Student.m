@@ -11,11 +11,6 @@
 @implementation Student
 
 
-
--(void)eat{
-    NSLog(@"학생은 급식을 먹어야지!");
-}
-
 -(void)study{
     NSLog(@"공부하다");
 }

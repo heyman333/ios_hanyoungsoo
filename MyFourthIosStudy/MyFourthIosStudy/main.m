@@ -10,21 +10,14 @@
 #import "UnivStudent.h"
 
 int main(int argc, const char * argv[]) {
-  
-    Person* person = [Person new];
-    NSLog(@"Person");
-    [person eat];
     
-    Student* youngsoo = [Student new];
-    NSLog(@"Student");
-    [youngsoo eat];
-    [youngsoo study];
+    Person * p1 = [Person new];
+    
+//    [p1 settingAge:20];
+    
+    
+    [p1 setAge:100];
+//    NSLog(@"%ld", [p1 age]);
 
-    UnivStudent* univStdt = [UnivStudent new];
-    NSLog(@"UnivStudent");
-    [univStdt eat];
-    [univStdt study];
-    [univStdt goMT];
-    
     return 0;
 }

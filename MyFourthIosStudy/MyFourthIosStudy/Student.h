@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Person.h"
 
-@interface Student : Person
+@interface  Student : Person
 
 @property NSInteger grade;
 
 -(void)study;
+
 
 @end

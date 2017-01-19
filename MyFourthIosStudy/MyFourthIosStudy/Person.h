@@ -10,11 +10,11 @@
 
 @interface Person : NSObject
 
-@property NSString * name ;
-@property NSInteger age ;
+//@property (readonly) NSInteger age;
+
+- (void)setAge:(NSInteger)age;
 
 
--(void)eat : (Person *)name;
 
 
 @end
