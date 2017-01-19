@@ -19,7 +19,7 @@
 
 - (void)eat
 {
-    self.eattingCount++;
+    _eattingCount++;
     NSLog(@"우걱 우걱");
 }
 
