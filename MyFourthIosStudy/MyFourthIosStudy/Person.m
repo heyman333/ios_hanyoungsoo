@@ -12,15 +12,21 @@
 
 @property NSInteger age;
 
+@property NSInteger eattingCount;
 @end
 
 @implementation Person
 
-//- (void)setAge:(NSInteger)age{
-//    
-//    _age = age;
-//    
-//}
 
+- (void)eat
+{
+    self.eattingCount++;
+    NSLog(@"우걱 우걱");
+}
+
+- (NSInteger)howManayEatting
+{
+    return self.eattingCount;
+}
 
 @end

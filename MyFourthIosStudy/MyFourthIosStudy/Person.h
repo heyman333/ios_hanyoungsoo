@@ -10,11 +10,6 @@
 
 @interface Person : NSObject
 
-//@property (readonly) NSInteger age;
-
-- (void)setAge:(NSInteger)age;
-
-
-
-
+- (void)eat;
+- (NSInteger)howManayEatting;
 @end

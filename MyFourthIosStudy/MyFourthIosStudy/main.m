@@ -12,12 +12,18 @@
 int main(int argc, const char * argv[]) {
     
     Person * p1 = [Person new];
+    [p1 eat];
+    [p1 eat];
+    [p1 eat];
+    [p1 eat];
+    [p1 eat];
+    [p1 eat];
+    [p1 eat];
+    [p1 eat]
+    NSLog(@"%ld",[p1 howManayEatting]);
     
-//    [p1 settingAge:20];
     
     
-    [p1 setAge:100];
-//    NSLog(@"%ld", [p1 age]);
 
     return 0;
 }
