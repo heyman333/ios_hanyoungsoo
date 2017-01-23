@@ -5,3 +5,4 @@ ios fastcampus project
  - Warrior VS Wizard : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MyThirdIos/MyThirdIos
  - 자료 은닉화 : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MyFourthIosStudy/MyFourthIosStudy
  - init함수 재정의 : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MyFifthIosStudy/MyFifthIosStudy
+ - 과목평균/도형치수/클래스 메소드 : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MyFifthIosStudy/MyFifthIosStudy
