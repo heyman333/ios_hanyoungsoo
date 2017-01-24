@@ -8,11 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import "IfStatementTest.h"
+#import "Calculator.h"
 int main(int argc, const char * argv[]) {
+    Calculator *cal = [[Calculator alloc] init];
+
+    [cal operatorInput:@"-"];
+    [cal inputNum:10];
+    [cal operatorInput:@"+"];
+    [cal inputNum:100];
+    [cal operatorInput:@"-"];
+    [cal inputNum:20];
+    [cal operatorInput:@"/"];
+    [cal inputNum:10];
+    [cal operatorInput:@"*"];
+    [cal inputNum:2];
+    [cal operatorInput:@"+"];
+    [cal inputNum:30];
+    [cal operatorInput:@"="];
     
-    [IfStatementTest whatIsMyGrade:30];
-    
-    NSLog(@"%.1f",[IfStatementTest whatIsMyPoint:@"A"]);
     
     return 0;
 }

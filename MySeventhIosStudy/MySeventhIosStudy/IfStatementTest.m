@@ -45,6 +45,7 @@
 }
 
 + (CGFloat)whatIsMyPoint:(NSString *)score{
+    
     if([score isEqualToString:@"A+"]){
         return 4.5;
     }

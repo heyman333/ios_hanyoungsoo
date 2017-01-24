@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6F8E918F1E36E6B2008FAEEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8E918E1E36E6B2008FAEEF /* main.m */; };
 		6F8E91971E36F5F2008FAEEF /* IfStatementTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8E91961E36F5F2008FAEEF /* IfStatementTest.m */; };
+		6FD0AEF11E3739F1009C59D6 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FD0AEF01E3739F1009C59D6 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		6F8E918E1E36E6B2008FAEEF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F8E91951E36F5F2008FAEEF /* IfStatementTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfStatementTest.h; sourceTree = "<group>"; };
 		6F8E91961E36F5F2008FAEEF /* IfStatementTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IfStatementTest.m; sourceTree = "<group>"; };
+		6FD0AEEF1E3739F1009C59D6 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		6FD0AEF01E3739F1009C59D6 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				6F8E918E1E36E6B2008FAEEF /* main.m */,
 				6F8E91951E36F5F2008FAEEF /* IfStatementTest.h */,
 				6F8E91961E36F5F2008FAEEF /* IfStatementTest.m */,
+				6FD0AEEF1E3739F1009C59D6 /* Calculator.h */,
+				6FD0AEF01E3739F1009C59D6 /* Calculator.m */,
 			);
 			path = MySeventhIosStudy;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F8E91971E36F5F2008FAEEF /* IfStatementTest.m in Sources */,
+				6FD0AEF11E3739F1009C59D6 /* Calculator.m in Sources */,
 				6F8E918F1E36E6B2008FAEEF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +258,7 @@
 				6F8E91941E36E6B2008FAEEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
