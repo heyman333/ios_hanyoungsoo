@@ -11,7 +11,9 @@
 @interface Calculator ()
 @property NSInteger retrunVal;
 @property NSMutableArray *oper;
-- (NSInteger)getReturnVal;
+- (void)operatorInput:(NSString *)oper;
+- (NSString *)operatorGet;
+- (void)inputNumAndCal:(NSInteger)num;
 @end
 
 @implementation Calculator
@@ -37,7 +39,23 @@
     return  [self.oper objectAtIndex:[self.oper count]-1];
 }
 
-- (void)inputNum:(NSInteger)num{
+
+- (void)input:(id)input{
+    NSNumber *num;
+    NSString *str;
+    if([input isKindOfClass:[NSNumber class]]){
+        num = input;
+        [self inputNumAndCal:[num integerValue]];
+        
+    }
+    else if([input isKindOfClass:[NSString class]]){
+        str = input;
+        [self operatorInput:input];
+        
+    }
+
+}
+- (void)inputNumAndCal:(NSInteger)num{
     if([self.oper count]==0){
         NSLog(@"연산자가 들어있지 않습니다.");
         self.retrunVal = num;
@@ -45,25 +63,24 @@
     else{
         if([[self operatorGet] isEqualToString:@"+"]){
             NSLog(@"연산을 실행합니다 %ld + %ld = %ld -> ", self.retrunVal, num, self.retrunVal + num);
+            [self.oper removeAllObjects];
             self.retrunVal = self.retrunVal + num;}
         else if([[self operatorGet] isEqualToString:@"-"]){
             NSLog(@"연산을 실행합니다 %ld - %ld = %ld -> ", self.retrunVal, num, self.retrunVal - num);
+            [self.oper removeAllObjects];
             self.retrunVal = self.retrunVal - num;
         }
         else if([[self operatorGet] isEqualToString:@"*"]){
             NSLog(@"연산을 실행합니다 %ld * %ld = %ld -> ", self.retrunVal, num, self.retrunVal * num);
+            [self.oper removeAllObjects];
             self.retrunVal = self.retrunVal * num;
         }
         else if([[self operatorGet] isEqualToString:@"/"]){
             NSLog(@"연산을 실행합니다 %ld / %ld = %ld -> ", self.retrunVal, num, self.retrunVal / num);
+            [self.oper removeAllObjects];
             self.retrunVal = self.retrunVal / num;
         }
 }
 }
-
-- (NSInteger)getReturnVal{
-    return self.retrunVal;
-}
-
 
 @end

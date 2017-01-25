@@ -10,9 +10,5 @@
 
 
 @interface Calculator : NSObject
-
-
-- (void)operatorInput:(NSString *)oper;
-- (NSString *)operatorGet;
-- (void)inputNum:(NSInteger)num;
+- (void)input:(id)input;
 @end

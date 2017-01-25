@@ -11,20 +11,20 @@
 #import "Calculator.h"
 int main(int argc, const char * argv[]) {
     Calculator *cal = [[Calculator alloc] init];
+    
+    [cal input:@"-"];
+    [cal input:@20];
+    [cal input:@"+"];
+    [cal input:@10];
+    [cal input:@"/"];
+    [cal input:@20];
+    [cal input:@"="];
+    
+    id integer = @10;
+    NSNumber *num = integer;
+    NSLog(@"%@",num);
 
-    [cal operatorInput:@"-"];
-    [cal inputNum:10];
-    [cal operatorInput:@"+"];
-    [cal inputNum:100];
-    [cal operatorInput:@"-"];
-    [cal inputNum:20];
-    [cal operatorInput:@"/"];
-    [cal inputNum:10];
-    [cal operatorInput:@"*"];
-    [cal inputNum:2];
-    [cal operatorInput:@"+"];
-    [cal inputNum:30];
-    [cal operatorInput:@"="];
+    
     
     
     return 0;
