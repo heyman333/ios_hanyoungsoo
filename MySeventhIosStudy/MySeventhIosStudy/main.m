@@ -21,8 +21,11 @@ int main(int argc, const char * argv[]) {
     [cal input:@"="];
     
     id integer = @10;
+    id str = @"str";
     NSNumber *num = integer;
+    NSString *sstr = str;
     NSLog(@"%@",num);
+    NSLog(@"%@",sstr);
 
     
     
