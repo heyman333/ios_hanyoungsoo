@@ -9,12 +9,32 @@
 #import <Foundation/Foundation.h>
 #import "Calendar.h"
 int main(int argc, const char * argv[]) {
+//
+//    NSInteger temp;
+//    
+//    scanf("%ld",&temp);
+//    
+//    [Calendar printCal:temp];
 
-    NSInteger temp;
+    @autoreleasepool {
+        __block int foo = 10;
+        
+        void (^printFoo)(int, float) =
+        ^(int f, float ff){
+            
+            NSLog(@"넘어온 값 : %i, %.2f ", f, ff);
+            NSLog(@"foo = %i" , foo);
+            foo = f;
+        };
     
-    scanf("%ld",&temp);
+        foo = 20;
+        printFoo(50, 30.12);
+        NSLog(@"foo = %i", foo );
+        
+        
+    }
     
-    [Calendar printCal:temp];
+    
     
     return 0;
 }
