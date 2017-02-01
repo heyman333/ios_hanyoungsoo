@@ -30,7 +30,6 @@ int main(int argc, const char * argv[]) {
     NSLog(@"%f", newFloat);
     
     
-    
-    
+
     return 0;
 }
