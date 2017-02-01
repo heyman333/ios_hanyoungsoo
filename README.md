@@ -8,3 +8,4 @@ ios fastcampus project
  - 과목평균/도형치수 구하기, 클래스 메소드 : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MySixthIosStudy/MySixthIosStudy
  - 계산기 구현 / If-statement : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MySeventhIosStudy/MySeventhIosStudy
  - SwitchStatment : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MyeighthIosStudy/MyeighthIosStudy
+ - 소수 끝자리 반올림하기 : https://github.com/heyman333/ios_hanyoungsoo/blob/master/MyNinethIosStudy/MyNinethIosStudy/main.m
