@@ -7,14 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CalToolBox.h"
-
 int main(int argc, const char * argv[]) {
 
-    
-//    CGFloat result = [CalToolBox roundNum:3.247735];
-//    NSLog(@"%.2lf", result);
-//
+
     NSNumber *ff = @13.55198;
     
     NSArray *temp = [[ff stringValue] componentsSeparatedByString:@"."];
@@ -33,6 +28,8 @@ int main(int argc, const char * argv[]) {
     newFloat = temp2 / a;
     
     NSLog(@"%f", newFloat);
+    
+    
     
     
     return 0;

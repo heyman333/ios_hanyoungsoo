@@ -246,6 +246,7 @@
 				6FDDA6281E41738D00510107 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
