@@ -13,3 +13,4 @@ ios fastcampus project
  - UI만들기 : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MyEleventhIIosStudy/MyEleventhIIosStudy
  - facebook UI 만들기: https://github.com/heyman333/ios_hanyoungsoo/tree/master/MyTwelvethIosStudy/MyTwelvethIosStudy
  - UIButton 만들기 : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MyFourteenIosStudy/MyFourteenIosStudy
+ - Vending Machine project : https://github.com/heyman333/ios_hanyoungsoo/tree/master/VendingMachine/VendingMachine
