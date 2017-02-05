@@ -33,6 +33,8 @@
     
     UIView *priceTag = [[UIView alloc] initWithFrame:CGRectMake(10,435,self.view.frame.size.width - 20 ,50)];
     
+    UIView *backImg = [[UIView alloc] initWithFrame:CGRectMake(0, 0,self.view.frame.size.width, self.view.frame.size.height)];
+    
     _showState = [[UILabel alloc] initWithFrame:CGRectMake(10,490,self.view.frame.size.width - 20 ,45)];
     [_showState setBackgroundColor:[UIColor lightGrayColor]];
     _showState.textAlignment = 1;
@@ -73,30 +75,43 @@
     [_won5000 setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
     
     
+    
+    UIImage *btnImage = [UIImage imageNamed:@"coke3.png"];
+    
     UIButton *cokePurchaceBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [cokePurchaceBtn setTitle:@"1000원" forState: UIControlStateNormal];
-    cokePurchaceBtn.frame=CGRectMake(40, 150 ,100, 30);
-    [cokePurchaceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [cokePurchaceBtn setBackgroundColor:[UIColor lightTextColor]];
+    cokePurchaceBtn.frame=CGRectMake(0, 0 ,menu1.frame.size.width, menu1.frame.size.height);
+//    [cokePurchaceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [cokePurchaceBtn setImage:btnImage forState:UIControlStateNormal];
+    
+    
+    UIImage *btnImage2 = [UIImage imageNamed:@"sprite2.png"];
     
     UIButton *spritePurchaceBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [spritePurchaceBtn setTitle:@"1400원" forState: UIControlStateNormal];
-    spritePurchaceBtn.frame=CGRectMake(40, 150 ,100, 30);
-    [spritePurchaceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [spritePurchaceBtn setBackgroundColor:[UIColor lightTextColor]];
+    spritePurchaceBtn.frame=CGRectMake(0, 0 ,menu2.frame.size.width, menu2.frame.size.height);
+//    [spritePurchaceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [spritePurchaceBtn setBackgroundColor:[UIColor lightTextColor]];
+    [spritePurchaceBtn setImage:btnImage2 forState:UIControlStateNormal];
+    
+    UIImage *btnImage3 = [UIImage imageNamed:@"budweiser2.png"];
     
     UIButton *budPurchaceBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [budPurchaceBtn setTitle:@"5000원" forState: UIControlStateNormal];
-    budPurchaceBtn.frame=CGRectMake(40, 150 ,100, 30);
-    [budPurchaceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [budPurchaceBtn setBackgroundColor:[UIColor lightTextColor]];
+    budPurchaceBtn.frame=CGRectMake(0, 0 ,menu3.frame.size.width, menu3.frame.size.height);
+//    [budPurchaceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [budPurchaceBtn setBackgroundColor:[UIColor lightTextColor]];
+    [budPurchaceBtn setImage:btnImage3 forState:UIControlStateNormal];
+    
+    
+    UIImage *btnImage4 = [UIImage imageNamed:@"windsor4.png"];
     
     UIButton *windPurchaceBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [windPurchaceBtn setTitle:@"80000원" forState: UIControlStateNormal];
-    windPurchaceBtn.frame=CGRectMake(40, 150 ,100, 30);
-    [windPurchaceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [windPurchaceBtn setBackgroundColor:[UIColor lightTextColor]];
-    
+    windPurchaceBtn.frame=CGRectMake(0, 0 ,menu4.frame.size.width, menu4.frame.size.height);
+//    [windPurchaceBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+//    [windPurchaceBtn setBackgroundColor:[UIColor lightTextColor]];
+    [windPurchaceBtn setImage:btnImage4 forState:UIControlStateNormal];
     
     
     priceTag.backgroundColor = [UIColor lightTextColor];
@@ -104,21 +119,22 @@
     
     
     UIImageView *coke = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,menu1.frame.size.width, menu1.frame.size.height)];
-    coke.image = [UIImage imageNamed:@"coke2.jpg"];
+    coke.image = [UIImage imageNamed:@"coke3.png"];
     UIImageView *sprite = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,menu2.frame.size.width, menu2.frame.size.height)];
-    sprite.image = [UIImage imageNamed:@"sprite.png"];
+    sprite.image = [UIImage imageNamed:@"sprite2.png"];
     UIImageView *budweiser = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,menu3.frame.size.width, menu3.frame.size.height)];
-    budweiser.image = [UIImage imageNamed:@"budweiser.jpg"];
+    budweiser.image = [UIImage imageNamed:@"budweiser2.png"];
     
     UIImageView *windsor = [[UIImageView alloc] initWithFrame:CGRectMake(0,0,menu4.frame.size.width, menu4.frame.size.height)];
-    windsor.image = [UIImage imageNamed:@"windsor.jpg"];
+    windsor.image = [UIImage imageNamed:@"windsor4.png"];
     
     _showPrice = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, priceTag.frame.size.width, priceTag.frame.size.height)];
     
     _showPrice.text = @"넣은금액 : 0원";
-    _showPrice.font = [UIFont systemFontOfSize:30];
+    _showPrice.font = [UIFont systemFontOfSize:20];
     _showPrice.textAlignment = 1;
-    
+
+    [self.view addSubview:backImg];
     [self.view addSubview:menu1];
     [self.view addSubview:menu2];
     [self.view addSubview:menu3];
@@ -126,6 +142,7 @@
     [self.view addSubview:priceTag];
     [self.view addSubview:priceChoice];
     [self.view addSubview:_showState];
+
     [priceChoice addSubview:_won100];
     [priceChoice addSubview:_won500];
     [priceChoice addSubview:_won1000];
@@ -141,7 +158,8 @@
     [menu3 addSubview:budPurchaceBtn];
     [menu4 addSubview:windPurchaceBtn];
     
-    
+    UIImageView *backGround = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, backImg.frame.size.width, backImg.frame.size.height)];
+    backGround.image = [UIImage imageNamed:@"iphone.jpg"];
     
     [_won100 addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [_won500 addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -153,7 +171,10 @@
     [budPurchaceBtn addTarget:self action:@selector(goodsSelected:) forControlEvents:UIControlEventTouchUpInside];
     [windPurchaceBtn addTarget:self action:@selector(goodsSelected:) forControlEvents:UIControlEventTouchUpInside];
     
+    [backImg addSubview:backGround];
+    [backImg setAlpha:0.7];
     
+
 }
 
 - (void)btnClicked:(UIButton *)sender{
@@ -187,6 +208,8 @@
 
 -(void)goodsSelected:(UIButton *)sender{
     if([sender.currentTitle isEqualToString:@"1000원"]){
+        
+        
         if (_money >= 1000) {
             _money -= 1000;
             [_showState setText:@"콜라가 나옵니다."];
@@ -239,8 +262,6 @@
         }
         
     }
-    
-    
     
 }
 

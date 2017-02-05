@@ -13,11 +13,15 @@
 		6FEDFE301E45F131009C6510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFE2E1E45F131009C6510 /* Main.storyboard */; };
 		6FEDFE321E45F131009C6510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFE311E45F131009C6510 /* Assets.xcassets */; };
 		6FEDFE351E45F131009C6510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFE331E45F131009C6510 /* LaunchScreen.storyboard */; };
-		6FEDFE3D1E45FDE6009C6510 /* coke.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFE3C1E45FDE6009C6510 /* coke.png */; };
-		6FEDFE3F1E46041D009C6510 /* sprite.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFE3E1E46041D009C6510 /* sprite.png */; };
-		6FEDFE411E460515009C6510 /* coke2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFE401E460515009C6510 /* coke2.jpg */; };
 		6FEDFE431E46058E009C6510 /* budweiser.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFE421E46058E009C6510 /* budweiser.jpg */; };
 		6FEDFE451E4606C5009C6510 /* windsor.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 6FEDFE441E4606C5009C6510 /* windsor.JPG */; };
+		6FF9FDF21E4768CB00FC7C4C /* iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9FDF11E4768CB00FC7C4C /* iphone.jpg */; };
+		6FF9FDF41E4771AF00FC7C4C /* coke.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9FDF31E4771AF00FC7C4C /* coke.png */; };
+		6FF9FDF61E4772A300FC7C4C /* sprite2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9FDF51E4772A300FC7C4C /* sprite2.png */; };
+		6FF9FDF81E47759800FC7C4C /* budweiser2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9FDF71E47759800FC7C4C /* budweiser2.png */; };
+		6FF9FDFA1E477A3D00FC7C4C /* coke3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9FDF91E477A3D00FC7C4C /* coke3.png */; };
+		6FF9FDFC1E477B1900FC7C4C /* windsor2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9FDFB1E477B1900FC7C4C /* windsor2.png */; };
+		6FF9FDFE1E477B6800FC7C4C /* windsor4.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FF9FDFD1E477B6800FC7C4C /* windsor4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +35,15 @@
 		6FEDFE311E45F131009C6510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FEDFE341E45F131009C6510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FEDFE361E45F131009C6510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FEDFE3C1E45FDE6009C6510 /* coke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coke.png; sourceTree = "<group>"; };
-		6FEDFE3E1E46041D009C6510 /* sprite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite.png; sourceTree = "<group>"; };
-		6FEDFE401E460515009C6510 /* coke2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coke2.jpg; sourceTree = "<group>"; };
 		6FEDFE421E46058E009C6510 /* budweiser.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = budweiser.jpg; sourceTree = "<group>"; };
 		6FEDFE441E4606C5009C6510 /* windsor.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = windsor.JPG; sourceTree = "<group>"; };
+		6FF9FDF11E4768CB00FC7C4C /* iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone.jpg; sourceTree = "<group>"; };
+		6FF9FDF31E4771AF00FC7C4C /* coke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coke.png; sourceTree = "<group>"; };
+		6FF9FDF51E4772A300FC7C4C /* sprite2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sprite2.png; sourceTree = "<group>"; };
+		6FF9FDF71E47759800FC7C4C /* budweiser2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = budweiser2.png; sourceTree = "<group>"; };
+		6FF9FDF91E477A3D00FC7C4C /* coke3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coke3.png; sourceTree = "<group>"; };
+		6FF9FDFB1E477B1900FC7C4C /* windsor2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = windsor2.png; sourceTree = "<group>"; };
+		6FF9FDFD1E477B6800FC7C4C /* windsor4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = windsor4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,11 +82,15 @@
 				6FEDFE2C1E45F131009C6510 /* ViewController.m */,
 				6FEDFE2E1E45F131009C6510 /* Main.storyboard */,
 				6FEDFE311E45F131009C6510 /* Assets.xcassets */,
+				6FF9FDFD1E477B6800FC7C4C /* windsor4.png */,
+				6FF9FDFB1E477B1900FC7C4C /* windsor2.png */,
+				6FF9FDF91E477A3D00FC7C4C /* coke3.png */,
+				6FF9FDF51E4772A300FC7C4C /* sprite2.png */,
+				6FF9FDF31E4771AF00FC7C4C /* coke.png */,
+				6FF9FDF11E4768CB00FC7C4C /* iphone.jpg */,
+				6FF9FDF71E47759800FC7C4C /* budweiser2.png */,
 				6FEDFE441E4606C5009C6510 /* windsor.JPG */,
 				6FEDFE421E46058E009C6510 /* budweiser.jpg */,
-				6FEDFE401E460515009C6510 /* coke2.jpg */,
-				6FEDFE3E1E46041D009C6510 /* sprite.png */,
-				6FEDFE3C1E45FDE6009C6510 /* coke.png */,
 				6FEDFE331E45F131009C6510 /* LaunchScreen.storyboard */,
 				6FEDFE361E45F131009C6510 /* Info.plist */,
 				6FEDFE251E45F131009C6510 /* Supporting Files */,
@@ -152,14 +164,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF9FDFC1E477B1900FC7C4C /* windsor2.png in Resources */,
 				6FEDFE451E4606C5009C6510 /* windsor.JPG in Resources */,
-				6FEDFE411E460515009C6510 /* coke2.jpg in Resources */,
 				6FEDFE351E45F131009C6510 /* LaunchScreen.storyboard in Resources */,
 				6FEDFE321E45F131009C6510 /* Assets.xcassets in Resources */,
-				6FEDFE3D1E45FDE6009C6510 /* coke.png in Resources */,
+				6FF9FDFA1E477A3D00FC7C4C /* coke3.png in Resources */,
 				6FEDFE301E45F131009C6510 /* Main.storyboard in Resources */,
+				6FF9FDF21E4768CB00FC7C4C /* iphone.jpg in Resources */,
+				6FF9FDF41E4771AF00FC7C4C /* coke.png in Resources */,
 				6FEDFE431E46058E009C6510 /* budweiser.jpg in Resources */,
-				6FEDFE3F1E46041D009C6510 /* sprite.png in Resources */,
+				6FF9FDFE1E477B6800FC7C4C /* windsor4.png in Resources */,
+				6FF9FDF61E4772A300FC7C4C /* sprite2.png in Resources */,
+				6FF9FDF81E47759800FC7C4C /* budweiser2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +343,7 @@
 				6FEDFE3B1E45F131009C6510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
