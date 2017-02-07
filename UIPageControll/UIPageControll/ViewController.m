@@ -23,7 +23,7 @@
     CGFloat maxFrame_height = self.view.frame.size.height;
     
     
-    UISwitch *mySwitch = [[UISwitch alloc] initWithFrame:CGRectMake((maxFrame_width / 2)-30, (maxFrame_height/2)-20, 200, 30)];
+    UISwitch *mySwitch = [[UISwitch alloc] initWithFrame:CGRectMake((maxFrame_width/2)-30, (maxFrame_height/2)-20, 200, 30)];
 
     NSArray *lastName = @[@"han",@"choi",@"kim",@"chun"];
     UISegmentedControl *segmentCon = [[UISegmentedControl alloc] initWithItems:lastName];
@@ -37,7 +37,6 @@
     [self.view addSubview:onBoardImagePageControl];
     [self.view addSubview:mySwitch];
     [self.view addSubview:segmentCon];
-    
     
 }
 
