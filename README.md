@@ -16,3 +16,4 @@ ios fastcampus project
  - Vending Machine project : https://github.com/heyman333/ios_hanyoungsoo/tree/master/VendingMachine/VendingMachine
  - UITextField 만들기 : https://github.com/heyman333/ios_hanyoungsoo/tree/master/MyFifteenthIosStudy/MyFifteenthIosStudy
  - LoginForm 만들기 : https://github.com/heyman333/ios_hanyoungsoo/tree/master/Login%20form/Login%20form
+ - UIPageContoller, UISegment, UISwitch : https://github.com/heyman333/ios_hanyoungsoo/tree/master/UIPageControll/UIPageControll
