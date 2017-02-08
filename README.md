@@ -1,3 +1,3 @@
-ios fastcampus study code
+ios (objective-c) practice
 ----
 
