@@ -11,6 +11,7 @@
 @interface ViewController ()
 <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSArray *animals;
+@property (nonatomic, strong) NSArray *animals_leg;
 @end
 
 @implementation ViewController
@@ -21,6 +22,7 @@
     CGFloat y = self.view.frame.size.height;
     
     self.animals = @[@"dog",@"snake",@"cat",@"elf",@"human",@"name",@"name2",@"name3",@"dname",@"snakkee",@"catcacaca",@"elflll"];
+    self.animals_leg = @[@4,@4,@4,@4,@4,@4,@4,@2,@4,@2,@2,@5,];
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0,10,x,y) style:UITableViewStylePlain];
     tableView.dataSource = self;
     tableView.delegate = self;
@@ -32,11 +34,15 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];
     }
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@", [self.animals objectAtIndex:indexPath.row]];
-    cell.textLabel.font = [UIFont systemFontOfSize:40.5];
+    
+    cell.textLabel.font = [UIFont systemFontOfSize:20.5];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",[self.animals_leg objectAtIndex:indexPath.row]];
+    cell.detailTextLabel.font = [UIFont systemFontOfSize:13.5];
     
     return cell;
 }
@@ -52,7 +58,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 80;
+    return 65;
 }
 
 - (void)didReceiveMemoryWarning {
