@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BubbleSort.h"
+#import "Sort.h"
 
 int main(int argc, const char * argv[]) {
     NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithArray:@[@10,@20,@1,@2,@30,@95,@5]];
 
-    NSMutableArray *sortedArray =  [BubbleSort bubbleSort:mutableArray];
+    NSMutableArray *sortedArray =  [Sort bubbleSort:mutableArray];
     
     for (NSNumber *num in sortedArray) {
         NSLog(@"%@",num);

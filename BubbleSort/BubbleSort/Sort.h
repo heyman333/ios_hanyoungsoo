@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BubbleSort : NSObject
+@interface Sort : NSObject
 +(NSMutableArray *)bubbleSort:(NSMutableArray *)array;
 @end

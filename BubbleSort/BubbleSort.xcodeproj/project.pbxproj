@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F28116D1E4C49C500B5E3A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F28116C1E4C49C500B5E3A2 /* main.m */; };
-		6F2811751E4C4A2900B5E3A2 /* BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2811741E4C4A2900B5E3A2 /* BubbleSort.m */; };
+		6F2811751E4C4A2900B5E3A2 /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2811741E4C4A2900B5E3A2 /* Sort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		6F2811691E4C49C500B5E3A2 /* BubbleSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BubbleSort; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F28116C1E4C49C500B5E3A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6F2811731E4C4A2900B5E3A2 /* BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
-		6F2811741E4C4A2900B5E3A2 /* BubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BubbleSort.m; sourceTree = "<group>"; };
+		6F2811731E4C4A2900B5E3A2 /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		6F2811741E4C4A2900B5E3A2 /* Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				6F28116C1E4C49C500B5E3A2 /* main.m */,
-				6F2811731E4C4A2900B5E3A2 /* BubbleSort.h */,
-				6F2811741E4C4A2900B5E3A2 /* BubbleSort.m */,
+				6F2811731E4C4A2900B5E3A2 /* Sort.h */,
+				6F2811741E4C4A2900B5E3A2 /* Sort.m */,
 			);
 			path = BubbleSort;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F28116D1E4C49C500B5E3A2 /* main.m in Sources */,
-				6F2811751E4C4A2900B5E3A2 /* BubbleSort.m in Sources */,
+				6F2811751E4C4A2900B5E3A2 /* Sort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

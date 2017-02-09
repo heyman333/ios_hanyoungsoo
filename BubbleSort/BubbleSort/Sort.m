@@ -6,21 +6,21 @@
 //  Copyright © 2017년 YoungsooHan. All rights reserved.
 //
 
-#import "BubbleSort.h"
+#import "Sort.h"
 
 
-@interface BubbleSort ()
+@interface Sort ()
 @property NSMutableArray *orderedArray;
 
 @end
 
-@implementation BubbleSort
+@implementation Sort
 
 
 + (NSMutableArray *)bubbleSort:(NSMutableArray *)array{
     
     for(int i = 0 ; i<array.count-1 ; i++) {
-        for(int j = 0 ; j < array.count-1 ; j++){
+        for(int j = 0 ; j < array.count-1-i; j++){
             if (array[j] > array[j+1]) {
                 NSNumber *temp = array[j];
                 array[j] = array[j+1];
@@ -31,7 +31,4 @@
 
     return array;
 }
-
-
-
 @end
