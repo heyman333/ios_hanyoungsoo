@@ -1,3 +1,3 @@
-ios (objective-c) practice
-----
+ios study at fast-campus
+
 
