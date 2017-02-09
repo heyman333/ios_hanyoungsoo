@@ -10,7 +10,7 @@
 #import "Sort.h"
 
 int main(int argc, const char * argv[]) {
-    NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithArray:@[@10,@20,@1,@2,@30,@95,@5]];
+    NSMutableArray *mutableArray = [[NSMutableArray alloc] initWithArray:@[@10,@20,@1,@2,@30,@95,@5,@40,@11]];
 
     NSMutableArray *sortedArray =  [Sort bubbleSort:mutableArray];
     
