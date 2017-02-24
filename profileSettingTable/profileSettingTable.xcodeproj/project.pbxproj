@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0E523A1E5E70D60045B001 /* DetailProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E52391E5E70D60045B001 /* DetailProfileController.m */; };
+		6F0E523C1E5E77C10045B001 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0E523B1E5E77C10045B001 /* profile.png */; };
+		6F0E523E1E5E94210045B001 /* ios.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0E523D1E5E94210045B001 /* ios.png */; };
+		6F0E52411E5EAF0F0045B001 /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0E52401E5EAF0F0045B001 /* DataCenter.m */; };
+		6F0E52431E5ED1F00045B001 /* Refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 6F0E52421E5ED1F00045B001 /* Refresh.png */; };
 		6F846FFE1E5DE86C00854F80 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F846FFD1E5DE86C00854F80 /* main.m */; };
 		6F8470011E5DE86C00854F80 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8470001E5DE86C00854F80 /* AppDelegate.m */; };
 		6F84700A1E5DE86C00854F80 /* profileSettingTable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6F8470081E5DE86C00854F80 /* profileSettingTable.xcdatamodeld */; };
@@ -18,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F0E52381E5E70D60045B001 /* DetailProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailProfileController.h; sourceTree = "<group>"; };
+		6F0E52391E5E70D60045B001 /* DetailProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailProfileController.m; sourceTree = "<group>"; };
+		6F0E523B1E5E77C10045B001 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		6F0E523D1E5E94210045B001 /* ios.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios.png; sourceTree = "<group>"; };
+		6F0E523F1E5EAF0F0045B001 /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		6F0E52401E5EAF0F0045B001 /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+		6F0E52421E5ED1F00045B001 /* Refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Refresh.png; sourceTree = "<group>"; };
 		6F846FF91E5DE86C00854F80 /* profileSettingTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = profileSettingTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F846FFD1E5DE86C00854F80 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F846FFF1E5DE86C00854F80 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +75,13 @@
 		6F846FFB1E5DE86C00854F80 /* profileSettingTable */ = {
 			isa = PBXGroup;
 			children = (
+				6F0E523B1E5E77C10045B001 /* profile.png */,
+				6F0E523D1E5E94210045B001 /* ios.png */,
+				6F0E523F1E5EAF0F0045B001 /* DataCenter.h */,
+				6F0E52401E5EAF0F0045B001 /* DataCenter.m */,
+				6F0E52421E5ED1F00045B001 /* Refresh.png */,
+				6F0E52381E5E70D60045B001 /* DetailProfileController.h */,
+				6F0E52391E5E70D60045B001 /* DetailProfileController.m */,
 				6F84701D1E5DE95B00854F80 /* ViewController.h */,
 				6F84701E1E5DE95B00854F80 /* ViewController.m */,
 				6F84701A1E5DE94500854F80 /* SettingTableViewCell.h */,
@@ -148,6 +167,9 @@
 				6F8470191E5DE8FF00854F80 /* Main.storyboard in Resources */,
 				6F84700F1E5DE86C00854F80 /* LaunchScreen.storyboard in Resources */,
 				6F84700C1E5DE86C00854F80 /* Assets.xcassets in Resources */,
+				6F0E52431E5ED1F00045B001 /* Refresh.png in Resources */,
+				6F0E523E1E5E94210045B001 /* ios.png in Resources */,
+				6F0E523C1E5E77C10045B001 /* profile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F0E523A1E5E70D60045B001 /* DetailProfileController.m in Sources */,
 				6F84701C1E5DE94500854F80 /* SettingTableViewCell.m in Sources */,
 				6F8470011E5DE86C00854F80 /* AppDelegate.m in Sources */,
 				6F84700A1E5DE86C00854F80 /* profileSettingTable.xcdatamodeld in Sources */,
+				6F0E52411E5EAF0F0045B001 /* DataCenter.m in Sources */,
 				6F846FFE1E5DE86C00854F80 /* main.m in Sources */,
 				6F84701F1E5DE95B00854F80 /* ViewController.m in Sources */,
 			);
@@ -309,6 +333,7 @@
 				6F8470151E5DE86C00854F80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

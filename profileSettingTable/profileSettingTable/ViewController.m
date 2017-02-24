@@ -8,6 +8,9 @@
 
 #import "ViewController.h"
 #import "SettingTableViewCell.h"
+#import "DetailProfileController.h"
+#import "DataCenter.h"
+
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property NSArray *friendArray;
 @property NSArray *friendAdmitArray;
@@ -24,7 +27,7 @@
     self.settingTable.delegate = self;
     self.settingTable.dataSource = self;
     
-    self.friendArray = @[@"자동 친구 추가",@"친구 목록 새로고침"];
+    self.friendArray = @[@"프로필 설정",@"친구 목록 새로고침"];
     self.friendAdmitArray = @[@"친구 추천 허용"];
     self.friendSyncArray = @[@"친구 이름 동기화"];
     self.manageFriendArray = @[@"숨김친구 관리 ",@"차단친구 관리"];
@@ -49,10 +52,15 @@
     NSLog(@"%ld", indexPath.row);
     switch (indexPath.section) {
         case 0:
-            if(indexPath.row == 1){
+            if(indexPath.row ==0 ){
+                cell.uiSwitchBtn.tag = 0;
+                [cell.uiSwitchBtn addTarget:self action:@selector(switchOFF:) forControlEvents:UIControlEventValueChanged];
+                
+            }
+            else if(indexPath.row == 1){
                 cell.uiSwitchBtn.hidden = YES;
-                UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(cell.frame.size.width-83,5,75,35)];
-                [btn setImage:[UIImage imageNamed:@"refreshNew"] forState:UIControlStateNormal];
+                UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(cell.frame.size.width-73,5,60,35)];
+                [btn setImage:[UIImage imageNamed:@"Refresh"] forState:UIControlStateNormal];
                 [cell addSubview:btn];
                 
             }
@@ -60,9 +68,13 @@
             
             break;
         case 1:
+            cell.uiSwitchBtn.tag = 1;
+            [cell.uiSwitchBtn addTarget:self action:@selector(switchOFF:) forControlEvents:UIControlEventValueChanged];
             cell.textLB.text = self.friendAdmitArray[indexPath.row];
             break;
         case 2:
+            cell.uiSwitchBtn.tag = 2;
+            [cell.uiSwitchBtn addTarget:self action:@selector(switchOFF:) forControlEvents:UIControlEventValueChanged];
             cell.textLB.text = self.friendSyncArray[indexPath.row];
             break;
         case 3:
@@ -128,7 +140,6 @@
     
 }
 
-
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
     NSLog(@"number : %ld", section);
@@ -149,9 +160,45 @@
         default:
             return 0;
             break;
-            
     }
-
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    DetailProfileController *detail = [story instantiateViewControllerWithIdentifier:@"DetailProfileController"];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    if ((indexPath.section == 0) && (indexPath.row == 0)) {
+        
+        [self.navigationController pushViewController:detail animated:YES];
+
+    }
+}
+-(void)switchOFF:(UISwitch *)sender{
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+
+    switch (sender.tag) {
+        case 0:
+            [userDefaults setObject:@"프로필 설정 불가" forKey:@"profileSetting"];
+            NSLog(@"프로필 설정 불가!!");
+            break;
+        case 1:
+            [userDefaults setObject:@"친구 추천 사용안함" forKey:@"admitFriends"];
+            NSLog(@"친구 추천 사용안함!!");
+            break;
+        case 2:
+            [userDefaults setObject:@"친구목록 동기화 안함" forKey:@"syncFriends"];
+            NSLog(@"친구 목록 동기화 안함!!");
+            break;
+        default:
+            break;
+    }
+    
+    
+}
+
+
 
 @end
