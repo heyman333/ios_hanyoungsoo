@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0557FA1E5FC5BB0092B82B /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F0557F91E5FC5BB0092B82B /* DataCenter.m */; };
 		6FED69F61E5AD17500C72996 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FED69F51E5AD17500C72996 /* main.m */; };
 		6FED69F91E5AD17500C72996 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FED69F81E5AD17500C72996 /* AppDelegate.m */; };
 		6FED69FC1E5AD17500C72996 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FED69FB1E5AD17500C72996 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F0557F81E5FC5BB0092B82B /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		6F0557F91E5FC5BB0092B82B /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
 		6FED69F11E5AD17500C72996 /* LogInView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogInView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FED69F51E5AD17500C72996 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6FED69F71E5AD17500C72996 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 		6FED69F31E5AD17500C72996 /* LogInView */ = {
 			isa = PBXGroup;
 			children = (
+				6F0557F81E5FC5BB0092B82B /* DataCenter.h */,
+				6F0557F91E5FC5BB0092B82B /* DataCenter.m */,
 				6FED69F71E5AD17500C72996 /* AppDelegate.h */,
 				6FED69F81E5AD17500C72996 /* AppDelegate.m */,
 				6FED69FA1E5AD17500C72996 /* ViewController.h */,
@@ -157,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6FED69FC1E5AD17500C72996 /* ViewController.m in Sources */,
+				6F0557FA1E5FC5BB0092B82B /* DataCenter.m in Sources */,
 				6FED69F91E5AD17500C72996 /* AppDelegate.m in Sources */,
 				6FED6A0D1E5AD76600C72996 /* JoinViewController.m in Sources */,
 				6FED69F61E5AD17500C72996 /* main.m in Sources */,
@@ -316,6 +322,7 @@
 				6FED6A0A1E5AD17500C72996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
