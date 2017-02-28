@@ -1,0 +1,27 @@
+//
+//  CustomTableViewCell.m
+//  StoryBoardPractice
+//
+//  Created by HanYoungsoo on 2017. 2. 27..
+//  Copyright © 2017년 YoungsooHan. All rights reserved.
+//
+
+#import "CustomTableViewCell.h"
+
+@implementation CustomTableViewCell
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+    
+    
+    
+    
+    
+}
+
+@end
