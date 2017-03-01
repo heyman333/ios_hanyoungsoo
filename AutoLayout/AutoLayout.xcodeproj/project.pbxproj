@@ -14,6 +14,8 @@
 		6FF41E241E650AED00BD53D7 /* AutoLayout.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FF41E221E650AED00BD53D7 /* AutoLayout.xcdatamodeld */; };
 		6FF41E261E650AED00BD53D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF41E251E650AED00BD53D7 /* Assets.xcassets */; };
 		6FF41E291E650AED00BD53D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF41E271E650AED00BD53D7 /* LaunchScreen.storyboard */; };
+		6FF41E311E65572900BD53D7 /* 1604271325147270.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6FF41E301E65572900BD53D7 /* 1604271325147270.jpg */; };
+		6FF41E341E6560C400BD53D7 /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF41E331E6560C400BD53D7 /* TextViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		6FF41E251E650AED00BD53D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6FF41E281E650AED00BD53D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6FF41E2A1E650AED00BD53D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FF41E301E65572900BD53D7 /* 1604271325147270.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1604271325147270.jpg; sourceTree = "<group>"; };
+		6FF41E321E6560C400BD53D7 /* TextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		6FF41E331E6560C400BD53D7 /* TextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +65,13 @@
 		6FF41E151E650AED00BD53D7 /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
+				6FF41E301E65572900BD53D7 /* 1604271325147270.jpg */,
 				6FF41E191E650AED00BD53D7 /* AppDelegate.h */,
 				6FF41E1A1E650AED00BD53D7 /* AppDelegate.m */,
 				6FF41E1C1E650AED00BD53D7 /* ViewController.h */,
 				6FF41E1D1E650AED00BD53D7 /* ViewController.m */,
+				6FF41E321E6560C400BD53D7 /* TextViewController.h */,
+				6FF41E331E6560C400BD53D7 /* TextViewController.m */,
 				6FF41E1F1E650AED00BD53D7 /* Main.storyboard */,
 				6FF41E251E650AED00BD53D7 /* Assets.xcassets */,
 				6FF41E271E650AED00BD53D7 /* LaunchScreen.storyboard */,
@@ -143,6 +151,7 @@
 				6FF41E291E650AED00BD53D7 /* LaunchScreen.storyboard in Resources */,
 				6FF41E261E650AED00BD53D7 /* Assets.xcassets in Resources */,
 				6FF41E211E650AED00BD53D7 /* Main.storyboard in Resources */,
+				6FF41E311E65572900BD53D7 /* 1604271325147270.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FF41E341E6560C400BD53D7 /* TextViewController.m in Sources */,
 				6FF41E1E1E650AED00BD53D7 /* ViewController.m in Sources */,
 				6FF41E1B1E650AED00BD53D7 /* AppDelegate.m in Sources */,
 				6FF41E241E650AED00BD53D7 /* AutoLayout.xcdatamodeld in Sources */,
