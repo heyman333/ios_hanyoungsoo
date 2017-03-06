@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NS_ENUM(NSInteger , MyEnum){
+    MyEnumValueA,
+    MyEnumValueB,
+    MyEnumValueC,
+};
+
 @interface DataCenter : NSObject
 +(instancetype)sharedInstance;
 -(NSArray *)fileLoad;

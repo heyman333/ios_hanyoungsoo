@@ -21,6 +21,12 @@
 //    DataCenter *datacenter = [DataCenter sharedInstance];
 //    self.phoneArr = [datacenter fileLoad];
     
+    MyEnum myEnum = MyEnumValueA;
+    myEnum = MyEnumValueB;
+    NSLog(@"%ld" , myEnum);
+    
+    
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{
