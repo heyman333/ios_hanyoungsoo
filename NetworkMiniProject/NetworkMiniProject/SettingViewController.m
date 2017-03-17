@@ -7,7 +7,7 @@
 //
 
 #import "SettingViewController.h"
-
+#import "AppMainViewController.h"
 @interface SettingViewController ()
 
 @end
@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    AppMainViewController *appmainVC = [[AppMainViewController alloc] init];
+    
+    
+    
+    
     self.navigationController.interactivePopGestureRecognizer.enabled = NO;
 }
 

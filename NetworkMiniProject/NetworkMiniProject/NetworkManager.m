@@ -12,7 +12,6 @@
 @implementation NetworkManager
 
 -(void)memberJoin:(NSString *)user_id pwd:(NSString *)user_pwd rePwd:(NSString *)user_pwd2 completion:(CompletionBlock)completion{
-    NSLog(@"efef111");
     NSMutableDictionary *bodyParameters = [[NSMutableDictionary alloc] init];
     
     [bodyParameters setObject:user_id forKey:@"username"];
@@ -69,9 +68,7 @@
     }];
 
     [uploadTask resume];
-    
 }
-
 
 -(void)logOut:(NSString *)token completion:(CompletionBlock)completion{
 
@@ -90,6 +87,27 @@
         NSLog(@"error : %@", error);
         completion(NO, error);
     }];
+}
+
+-(void)getPostList:(NSString *)token pageNum:(NSNumber *) num completion:(CompletionBlock)completion{
+    
+    NSString *urlString = [NSString stringWithFormat:@"%@", POST_API];
+    NSString *authURL = [NSString stringWithFormat:@"%@ %@",@"Token",token];
+    AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+    //    [manager.requestSerializer setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [manager.requestSerializer setValue:authURL forHTTPHeaderField:@"Authorization"];
+    [manager.requestSerializer setValue:[num stringValue] forHTTPHeaderField:@"page"];
+    
+    [manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"글목록 가져오기 success!");
+        completion(YES, responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"error : %@", error);
+        completion(NO, error);
+    }];
+    
 }
 
 

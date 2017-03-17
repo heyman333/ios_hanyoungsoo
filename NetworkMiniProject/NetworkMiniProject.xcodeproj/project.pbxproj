@@ -20,6 +20,7 @@
 		6F2B5A351E79B3650007B29B /* AppMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2B5A341E79B3650007B29B /* AppMainViewController.m */; };
 		6FE82FB61E7A657300B84C15 /* JoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE82FB51E7A657300B84C15 /* JoinViewController.m */; };
 		6FE82FB91E7A90AA00B84C15 /* BoardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE82FB81E7A90AA00B84C15 /* BoardTableViewCell.m */; };
+		6FF23EC81E7B81CB0088A602 /* WrittingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FF23EC71E7B81CB0088A602 /* WrittingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		6FE82FB51E7A657300B84C15 /* JoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinViewController.m; sourceTree = "<group>"; };
 		6FE82FB71E7A90AA00B84C15 /* BoardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoardTableViewCell.h; sourceTree = "<group>"; };
 		6FE82FB81E7A90AA00B84C15 /* BoardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoardTableViewCell.m; sourceTree = "<group>"; };
+		6FF23EC61E7B81CB0088A602 /* WrittingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrittingViewController.h; sourceTree = "<group>"; };
+		6FF23EC71E7B81CB0088A602 /* WrittingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrittingViewController.m; sourceTree = "<group>"; };
 		871DAC3178C31FDA1E210D1C /* Pods-NetworkMiniProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkMiniProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkMiniProject/Pods-NetworkMiniProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,22 +86,15 @@
 		6F2B5A121E79B09D0007B29B /* NetworkMiniProject */ = {
 			isa = PBXGroup;
 			children = (
-				6F2B5A161E79B09D0007B29B /* AppDelegate.h */,
-				6F2B5A171E79B09D0007B29B /* AppDelegate.m */,
-				6F2B5A191E79B09D0007B29B /* ViewController.h */,
-				6F2B5A1A1E79B09D0007B29B /* ViewController.m */,
-				6F2B5A2A1E79B0B70007B29B /* DataCenter.h */,
-				6F2B5A2B1E79B0B70007B29B /* DataCenter.m */,
-				6F2B5A2D1E79B0D00007B29B /* NetworkManager.h */,
-				6F2B5A2E1E79B0D00007B29B /* NetworkManager.m */,
-				6F2B5A301E79B2930007B29B /* SettingViewController.h */,
-				6F2B5A311E79B2930007B29B /* SettingViewController.m */,
-				6F2B5A331E79B3650007B29B /* AppMainViewController.h */,
-				6F2B5A341E79B3650007B29B /* AppMainViewController.m */,
-				6FE82FB41E7A657300B84C15 /* JoinViewController.h */,
-				6FE82FB51E7A657300B84C15 /* JoinViewController.m */,
-				6FE82FB71E7A90AA00B84C15 /* BoardTableViewCell.h */,
-				6FE82FB81E7A90AA00B84C15 /* BoardTableViewCell.m */,
+				6FF23ED11E7B87D90088A602 /* CustomCell */,
+				6FF23ED01E7B87CD0088A602 /* JoinView */,
+				6FF23ECF1E7B87B70088A602 /* MainView */,
+				6FF23ECE1E7B87AA0088A602 /* SettingView */,
+				6FF23ECD1E7B87A00088A602 /* LoginView */,
+				6FF23ECC1E7B87930088A602 /* NetworkManager */,
+				6FF23ECB1E7B87840088A602 /* Delegate */,
+				6FF23ECA1E7B87790088A602 /* DataCenter */,
+				6FF23EC91E7B876F0088A602 /* WritingView */,
 				6F2B5A1C1E79B09D0007B29B /* Main.storyboard */,
 				6F2B5A1F1E79B09D0007B29B /* Assets.xcassets */,
 				6F2B5A211E79B09D0007B29B /* LaunchScreen.storyboard */,
@@ -114,6 +110,87 @@
 				6F2B5A141E79B09D0007B29B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FF23EC91E7B876F0088A602 /* WritingView */ = {
+			isa = PBXGroup;
+			children = (
+				6FF23EC61E7B81CB0088A602 /* WrittingViewController.h */,
+				6FF23EC71E7B81CB0088A602 /* WrittingViewController.m */,
+			);
+			name = WritingView;
+			sourceTree = "<group>";
+		};
+		6FF23ECA1E7B87790088A602 /* DataCenter */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B5A2A1E79B0B70007B29B /* DataCenter.h */,
+				6F2B5A2B1E79B0B70007B29B /* DataCenter.m */,
+			);
+			name = DataCenter;
+			sourceTree = "<group>";
+		};
+		6FF23ECB1E7B87840088A602 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B5A161E79B09D0007B29B /* AppDelegate.h */,
+				6F2B5A171E79B09D0007B29B /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		6FF23ECC1E7B87930088A602 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B5A2D1E79B0D00007B29B /* NetworkManager.h */,
+				6F2B5A2E1E79B0D00007B29B /* NetworkManager.m */,
+			);
+			name = NetworkManager;
+			sourceTree = "<group>";
+		};
+		6FF23ECD1E7B87A00088A602 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B5A191E79B09D0007B29B /* ViewController.h */,
+				6F2B5A1A1E79B09D0007B29B /* ViewController.m */,
+			);
+			name = LoginView;
+			sourceTree = "<group>";
+		};
+		6FF23ECE1E7B87AA0088A602 /* SettingView */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B5A301E79B2930007B29B /* SettingViewController.h */,
+				6F2B5A311E79B2930007B29B /* SettingViewController.m */,
+			);
+			name = SettingView;
+			sourceTree = "<group>";
+		};
+		6FF23ECF1E7B87B70088A602 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				6F2B5A331E79B3650007B29B /* AppMainViewController.h */,
+				6F2B5A341E79B3650007B29B /* AppMainViewController.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		6FF23ED01E7B87CD0088A602 /* JoinView */ = {
+			isa = PBXGroup;
+			children = (
+				6FE82FB41E7A657300B84C15 /* JoinViewController.h */,
+				6FE82FB51E7A657300B84C15 /* JoinViewController.m */,
+			);
+			name = JoinView;
+			sourceTree = "<group>";
+		};
+		6FF23ED11E7B87D90088A602 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				6FE82FB71E7A90AA00B84C15 /* BoardTableViewCell.h */,
+				6FE82FB81E7A90AA00B84C15 /* BoardTableViewCell.m */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 		BF7E7FFD02A731F72F657D0C /* Frameworks */ = {
@@ -258,6 +335,7 @@
 			files = (
 				6F2B5A1B1E79B09D0007B29B /* ViewController.m in Sources */,
 				6F2B5A181E79B09D0007B29B /* AppDelegate.m in Sources */,
+				6FF23EC81E7B81CB0088A602 /* WrittingViewController.m in Sources */,
 				6F2B5A2C1E79B0B70007B29B /* DataCenter.m in Sources */,
 				6F2B5A2F1E79B0D00007B29B /* NetworkManager.m in Sources */,
 				6F2B5A351E79B3650007B29B /* AppMainViewController.m in Sources */,
